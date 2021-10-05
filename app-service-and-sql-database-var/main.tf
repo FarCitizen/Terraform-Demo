@@ -3,6 +3,10 @@ resource "azurerm_resource_group" "RG-Terraform" {
   location = "East US"
 }
 
+provider "azurerm" {
+features {}
+}
+
 resource "azurerm_app_service_plan" "ASP-TerraForm" {
   name                = "terraform-appserviceplan"
   location            = azurerm_resource_group.RG-Terraform.location
