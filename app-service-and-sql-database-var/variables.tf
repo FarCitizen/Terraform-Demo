@@ -9,6 +9,6 @@ variable "app-service-name" {
 }
 
 variable "location" {
-  default     = "West Europe"
+  default     = "East US"
   description = "The Azure location where all resources in this example should be created"
 }
